@@ -9,6 +9,8 @@ This repository treats about how to automate AWS Lambda Layers deployment with D
 
 run
 ```
+chmod +x lambda/build.sh 
+chmod +x lambda/layer-pandas/build_layer.sh
 cd lambda/
 ./build.sh
 cd ..
