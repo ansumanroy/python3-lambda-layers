@@ -12,6 +12,7 @@ run
 cd lambda/
 ./build.sh
 cd ..
+terraform init
 terraform apply
 ```
 and type _yes_
