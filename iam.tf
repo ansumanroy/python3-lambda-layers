@@ -22,4 +22,3 @@ resource "aws_iam_role_policy_attachment" "lambda_basic_execution_policy_attache
   role       = "${aws_iam_role.role_for_lambda.name}"
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
 }
-

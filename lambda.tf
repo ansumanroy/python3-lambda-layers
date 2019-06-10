@@ -18,10 +18,9 @@ resource "aws_lambda_function" "lambda-function" {
 }
 
 resource "aws_lambda_layer_version" "python37-pandas-layer" {
-  filename          = "lambda/packages/Python3-pandas.zip"
-  layer_name        = "Python3-pandas"
-  source_code_hash  = "${filebase64sha256("lambda/packages/Python3-pandas.zip")}"
+  filename         = "lambda/packages/Python3-pandas.zip"
+  layer_name       = "Python3-pandas"
+  source_code_hash = "${filebase64sha256("lambda/packages/Python3-pandas.zip")}"
 
   compatible_runtimes = ["python3.6", "python3.7"]
 }
-
