@@ -9,7 +9,9 @@ This repository treats about how to automate AWS Lambda Layers deployment with D
 
 run
 ```
+cd lambda/
 ./build.sh
+cd ..
 terraform apply
 ```
 and type _yes_
