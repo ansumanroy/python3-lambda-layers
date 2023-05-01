@@ -51,3 +51,9 @@ jobs:
           - Second Change
         draft: false
         prerelease: false
+    - name: Release with Notes
+      uses: softprops/action-gh-release@v1
+      with:
+        files: lambda/packages/Python3-pandas.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
