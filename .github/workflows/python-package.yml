@@ -26,4 +26,5 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install dependencies on target folder and zip
       run: |
-        ./lambda/build.sh
+        cd lambda
+        ./build.sh
